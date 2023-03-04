@@ -52,10 +52,7 @@ const Register = () => {
                         <input
                             name="email"
                             value={inputText.email}
-                            onChange={(e) => setInputText({
-                                ...inputText,
-                                [e.target.name]: e.target.value
-                            })}
+                            onChange={handelChange}
                             type="email"
                             className='md:w-[25rem] w-[15rem] h-[2rem] md:ml-[2rem] ml-[2.2rem]'
                             placeholder='Please enter the Email' />
@@ -65,10 +62,7 @@ const Register = () => {
                         <input
                             name="password"
                             value={inputText.password}
-                            onChange={(e) => setInputText({
-                                ...inputText,
-                                [e.target.name]: e.target.value
-                            })}
+                            onChange={handelChange}
                             type="password"
                             className='md:w-[25rem] w-[15rem] h-[2rem] md:ml-[2rem] ml-[2.2rem]'
                             placeholder='Please enter the Password' />

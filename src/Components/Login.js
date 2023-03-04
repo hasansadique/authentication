@@ -7,6 +7,17 @@ const Login = () => {
         email: "",
         password: ""
     })
+    const handelChange = (e) => {
+        const { name, value } = e.target;
+        setInputText(prevText => {
+            return {
+                ...prevText,
+                [name]: value
+            }
+
+        })
+
+    }
     const handelSubmit = (e) => {
         e.preventDefault();
         const loggedUser = JSON.parse(localStorage.getItem("user"))
@@ -33,10 +44,7 @@ const Login = () => {
                         <input
                             name="email"
                             value={inputText.email}
-                            onChange={(e) => setInputText({
-                                ...inputText,
-                                [e.target.name]: e.target.value
-                            })}
+                            onChange={handelChange}
                             type="text"
                             className='md:w-[25rem] w-[15rem] h-[2rem] md:ml-[2rem] ml-[2.2rem]'
                             placeholder='Please enter the Email' />
@@ -46,10 +54,7 @@ const Login = () => {
                         <input
                             name="password"
                             value={inputText.password}
-                            onChange={(e) => setInputText({
-                                ...inputText,
-                                [e.target.name]: e.target.value
-                            })}
+                            onChange={handelChange}
                             type="password"
                             className='md:w-[25rem] w-[15rem] h-[2rem] md:ml-[2rem] ml-[2.2rem]' placeholder='Please enter the Password' />
                     </div>

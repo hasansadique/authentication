@@ -14,9 +14,7 @@ const Login = () => {
                 ...prevText,
                 [name]: value
             }
-
         })
-
     }
     const handelSubmit = (e) => {
         e.preventDefault();
@@ -46,17 +44,17 @@ const Login = () => {
                             value={inputText.email}
                             onChange={handelChange}
                             type="text"
-                            className='md:w-[25rem] w-[15rem] h-[2rem] md:ml-[2rem] ml-[2.2rem]'
+                            className='md:w-[25rem] w-[15rem] h-[2rem] md:ml-[2rem] ml-[2.2rem] border-black'
                             placeholder='Please enter the Email' />
                     </div>
                     <div className='flex flex-col items-start mt-[3rem]'>
-                        <label className='md:ml-[2rem] ml-[33px] md:my-[10px]' htmlFor="name"> Password</label>
+                        <label className='md:ml-[2rem] ml-[33px] md:my-[10px]' htmlFor="password"> Password</label>
                         <input
                             name="password"
                             value={inputText.password}
                             onChange={handelChange}
                             type="password"
-                            className='md:w-[25rem] w-[15rem] h-[2rem] md:ml-[2rem] ml-[2.2rem]' placeholder='Please enter the Password' />
+                            className='md:w-[25rem] w-[15rem] h-[2rem] md:ml-[2rem] ml-[2.2rem] border-black' placeholder='Please enter the Password' />
                     </div>
                     <button className='bg-cyan-500 shadow-lg shadow-cyan-500/50 md:mt-[3rem] md:h-[30px] md:w-[8rem] w-[5rem] md:rounded-2xl rounded-xl my-[50px] 
                 '>Login</button>

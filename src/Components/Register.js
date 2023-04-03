@@ -42,7 +42,7 @@ const Register = () => {
                             name="name"
                             value={inputText.name}
                             onChange={handelChange}
-                            className='md:w-[25rem] w-[15rem] h-[2rem] md:ml-[2rem] ml-[2.2rem] border-solid border-black'
+                            className='md:w-[25rem] w-[15rem] h-[2rem] md:ml-[2rem] ml-[2.2rem] border-black'
                             type="text"
                             placeholder='Please enter the Name' />
 
@@ -54,7 +54,7 @@ const Register = () => {
                             value={inputText.email}
                             onChange={handelChange}
                             type="email"
-                            className='md:w-[25rem] w-[15rem] h-[2rem] md:ml-[2rem] ml-[2.2rem]'
+                            className='md:w-[25rem] w-[15rem] h-[2rem] md:ml-[2rem] ml-[2.2rem] border-black'
                             placeholder='Please enter the Email' />
                     </div>
                     <div className='flex flex-col items-start mt-[3rem]'>
@@ -64,7 +64,7 @@ const Register = () => {
                             value={inputText.password}
                             onChange={handelChange}
                             type="password"
-                            className='md:w-[25rem] w-[15rem] h-[2rem] md:ml-[2rem] ml-[2.2rem]'
+                            className='md:w-[25rem] w-[15rem] h-[2rem] md:ml-[2rem] ml-[2.2rem] border-black'
                             placeholder='Please enter the Password' />
                     </div>
                     <button className='bg-cyan-500 shadow-lg shadow-cyan-500/50 md:mt-[3rem] md:h-[30px] md:w-[8rem] w-[5rem] md:rounded-2xl rounded-xl mt-[25px] 
